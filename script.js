@@ -13,6 +13,13 @@ function createGrid(squaresPerSide) {
   for (let i = 0; i < squaresPerSide * squaresPerSide; i++) {
     const div = document.createElement("div");
     div.classList("square");
+
+    div.style.width = `${squareSize}px`;
+    div.style.height = `${squareSize}px`;
+
+    div.addEventListener("mouseover", () => {
+      div.style.backgroundColor = "green";
+    });
   }
 }
 
