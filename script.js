@@ -27,6 +27,12 @@ function createGrid(squaresPerSide) {
 
 button.addEventListener("click", () => {
   let input = prompt("How many squares do you want?");
+
+  const size = Number(input);
+  if (!size || size < 1 || size > 100) {
+    alert("Please enter a number between 1 and 100.");
+    return;
+  }
 });
 
 // appendChild() is last because we want to modify it when it's still in memory and not rendered on the page yet
