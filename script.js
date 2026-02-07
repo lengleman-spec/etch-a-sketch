@@ -12,6 +12,7 @@ function createGrid(squaresPerSide) {
 
   for (let i = 0; i < squaresPerSide * squaresPerSide; i++) {
     const div = document.createElement("div");
+    div.classList("square");
   }
 }
 
