@@ -8,6 +8,7 @@ document.body.prepend(button);
 
 function createGrid(squaresPerSide) {
   container.innerHTML = ""; // Removes all exisiting squares
+  const squareSize = containerSize / squaresPerSide;
 }
 
 for (let i = 0; i < 16 * 16; i++) {
